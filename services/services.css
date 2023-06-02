@@ -39,15 +39,6 @@ body {
   font-weight: bold;
 }
 
-
-
-.container {
-  max-width: 1000px;
-  /* Set a maximum width for your container */
-  margin: 0 auto;
-  /* Center the container horizontally */
-}
-
 .accordion-button:not(.collapsed) {
   background-color: #77c9ff;
 }
@@ -117,6 +108,7 @@ body {
   border-color: var(--btn-active-border-color);
 }
 
+/* 
 i.fa-brands.fa-square-facebook {
   color: var(--fb-bg);
 }
@@ -137,7 +129,7 @@ i.fab.fa-linkedin {
 
 i.fab.fa-github {
   color: var(--git-color);
-}
+} */
 
 
 /* Extra small devices (portrait phones, less than 576px) */
