@@ -31,7 +31,7 @@
   <!-- font link -->
   <style>
     section {
-      padding: 40px 0 0 0;
+      padding: 80px 0 80px 0;
     }
   </style>
 </head>
@@ -41,7 +41,7 @@
   <!-- header -->
   <header id="home">
     <!-- navbar  -->
-    <nav class="navbar navbar-expand-lg" role="navigation">
+    <nav class="navbar navbar-expand-lg fixed-top bg-light" role="navigation">
       <!-- mavbar container -->
       <div class="container justify-content-between">
         <!-- navbar-brand name -->
@@ -102,11 +102,11 @@
     </nav>
     <!-- navbar  -->
     <!-- introduction -->
-    <section class="container-fluid introduction pb-5 ">
+    <section class="container-fluid introduction pt-5 pb-5">
       <div class="container text-left rel">
-        <div class="row align-items-center" aria-label="Introduction to myself">
+        <div class="row align-items-center pt-5" aria-label="Introduction to myself">
           <div class="col-12 col-md-6 col-sm-6">
-            <p class="h1">Hello,</p>
+            <p class="h1 mb-0">Hello,</p>
             <p class="h1"><span>I am <span class="custom-name">Aashutosh Kayastha</span> a
                 Frontend
                 developer from Nepal.</span></p>
@@ -117,7 +117,8 @@
           </div>
           <div class="col-12 col-md-6 col-sm-6 d-flex justify-content-end align-content-end" role="img"
             aria-label="A potrait picture of myself">
-            <img src="/images/asu.png" class="img-fluid" id="potrait" alt="A potrait picture of myself">
+            <img src="/images/asu.png" class="img-fluid" id="potrait" style="max-height: 525px;"
+              alt="A potrait picture of myself">
 
           </div>
         </div>
@@ -130,10 +131,11 @@
   </header>
   <main role="main">
     <!-- About me -->
-    <section class="container-fluid" id="about-me">
+    <section class="container-fluid pb-5" id="about-me">
       <div class="container">
         <div class="row text-start p-2">
           <p class="h5 text-uppercase custom-text-color reveal fade-bottom">ABOUT ME</p>
+
           <p class="h2 reveal fade-bottom" role="heading" aria-level="2">A Little About Me and My Passion</p>
         </div>
       </div>
@@ -174,15 +176,15 @@
         <p class="h5 text-uppercase custom-text-color">Services</p>
         <p class="h2">Various type of tech and Digital Services</p>
       </div>
-      <div class="container mt-4 mt-md-3 mt-sm-2 services justify-content-center ">
+      <div class="container mt-4 mt-md-3 mt-sm-2 services justify-content-center  pt-5">
         <div class="card-deck custom-deck gap-lg-4 gap-md-4 gap-3  justify-content-start d-inline-flex flex-wrap">
           <div class="card custom-card1">
             <div class="card-body">
-              <h6 class="card-title">Front-End Development</h6>
-              <h6 class="card-subtitle mb-2 text-body-secondary">HTML, CSS, JS</h6>
+              <h6 class="card-title fs-5">Front-End Development</h6>
+              <h6 class="card-subtitle mb-2 text-body-secondary fs-6">HTML, CSS, JS</h6>
               <p class="card-text text-muted small">Deliver the best visual experiences combining your ideas and our
                 frontend expertise</p>
-              <a href="/services/service.html" class="card-link stretched-link">Read More</a>
+              <a href="/services/service.html" class="card-link stretched-link redmore">Read More</a>
             </div>
           </div>
           <!-- <div class="card custom-card1">
@@ -238,7 +240,7 @@
         <p class="h5 text-uppercase custom-text-color">My works</p>
         <p class="h2">Check out my latest works</p>
       </div>
-      <div class="container-fluid mt-3 p-0 ">
+      <div class="container-fluid mt-3 p-0 pt-5 ">
         <div class="container custom-control carousel slide" id="carouselExampleIndicators" data-bs-ride="carousel">
           <!-- <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -265,28 +267,30 @@
                   <img src="/images/services/portfolio.jpg" class="card-img-top" alt="responsive portfolio design"
                     aria-label="responsive portfolio design">
                   <div class="card-body">
-                    <h6 class="card-title">Portfolio Design</h6>
+                    <h6 class="card-title fs-5">Portfolio Design</h6>
 
                     <a href="index.html"
-                      class="btn custom-btn-color btn-warning custom-btn-color small stretched-link">View Design
+                      class="btn custom-btn-color btn-warning custom-btn-color small btn-sm stretched-link">View Design
                     </a>
                   </div>
                 </div>
                 <div class="card d-none d-md-block" id="custom-card">
                   <img src="/images/works/blogpage.png" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h6 class="card-title">Blog Page Design</h6>
+                    <h6 class="card-title fs-5">Blog Page Design</h6>
 
                     <a href="https://6446162af5449176f13c4a5c--heartfelt-gumdrop-bd8f01.netlify.app" target="_blank"
-                      class="btn custom-btn-color btn-warning custom-btn-color small stretched-link">View Design</a>
+                      class="btn custom-btn-color btn-warning custom-btn-color btn-sm small stretched-link">View
+                      Design</a>
                   </div>
                 </div>
                 <div class="card d-none d-md-block" id="custom-card">
                   <img src="/images/works/c.png" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h6 class="card-title">Card title</h6>
+                    <h6 class="card-title fs-5">Card title</h6>
 
-                    <a href="#" class="btn custom-btn-color btn-warning custom-btn-color small stretched-link">View
+                    <a href="#"
+                      class="btn custom-btn-color btn-sm btn-warning custom-btn-color small stretched-link">View
                       Design</a>
                   </div>
                 </div>
@@ -297,26 +301,28 @@
                 <div class="card " id="custom-card">
                   <img src="/images/works/blogpage.png" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h6 class="card-title">Blog page design</h6>
+                    <h6 class="card-title fs-5">Blog page design</h6>
 
                     <a href="https://6446162af5449176f13c4a5c--heartfelt-gumdrop-bd8f01.netlify.app" target="_blank"
-                      class="btn custom-btn-color btn-warning custom-btn-color small stretched-link">View Design</a>
+                      class="btn custom-btn-color btn-warning custom-btn-color small stretched-link btn-sm">View
+                      Design</a>
                   </div>
                 </div>
                 <div class="card d-none d-md-block" id="custom-card">
                   <img src="/images/works/e.png" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h6 class="card-title">Card title</h6>
+                    <h6 class="card-title fs-5">Card title</h6>
 
-                    <a href="#" class="btn custom-btn-color btn-warning custom-btn-color small">View Design</a>
+                    <a href="#" class="btn custom-btn-color btn-warning custom-btn-color small btn-sm">View Design</a>
                   </div>
                 </div>
                 <div class="card d-none d-md-block" id="custom-card">
                   <img src="/images/works/f.png" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h6 class="card-title">Card title</h6>
+                    <h6 class="card-title fs-5">Card title</h6>
 
-                    <a href="#" class="btn custom-btn-color btn-warning custom-btn-color small stretched-link">View
+                    <a href="#"
+                      class="btn custom-btn-color btn-warning custom-btn-color small stretched-link btn-sm">View
                       Design</a>
                   </div>
                 </div>
@@ -327,26 +333,26 @@
                 <div class="card" id="custom-card">
                   <img src="/images/works/c.png" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h6 class="card-title">Card title</h6>
+                    <h6 class="card-title fs-5">Card title</h6>
 
-                    <a href="#" class="btn custom-btn-color btn-warning small stretched-link">View Design</a>
+                    <a href="#" class="btn custom-btn-color btn-warning small stretched-link btn-sm">View Design</a>
                   </div>
                 </div>
                 <div class="card d-none d-md-block" id="custom-card">
                   <img src="/images/works/e.png" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h6 class="card-title">Card title</h6>
+                    <h6 class="card-title fs-5">Card title</h6>
 
-                    <a href="#" class="btn custom-btn-color btn-warning small stretched-link">View Design</a>
+                    <a href="#" class="btn custom-btn-color btn-warning small stretched-link btn-sm">View Design</a>
                   </div>
                 </div>
                 <div class="card d-none d-md-block" id="custom-card">
                   <img src="/images/works/blogpage.png" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h6 class="card-title">Blog page design</h6>
+                    <h6 class="card-title fs-5">Blog page design</h6>
 
                     <a href="https://6446162af5449176f13c4a5c--heartfelt-gumdrop-bd8f01.netlify.app" target="_blank"
-                      class="btn custom-btn-color btn-warning small stretched-link">View Design</a>
+                      class="btn custom-btn-color btn-warning small stretched-link btn-sm">View Design</a>
                   </div>
                 </div>
               </div>
@@ -365,7 +371,7 @@
         <p class="h5 text-uppercase custom-text-color">News & Blogs</p>
         <p class="h2">Take a tour to my latest news and blogs</p>
       </div>
-      <div class="container-fluid mt-3 p-0">
+      <div class="container-fluid mt-3 p-0 pt-5">
         <div id="carouselblogIndicators" class="container custom-control carousel slide" data-bs-ride="carousel">
           <!-- <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -386,7 +392,8 @@
                       exciting
                       and challenging
                       experience. As a frontend intern at Aspark System.</p>
-                    <a href="/blogs/blogs.html" class="btn btn-warning custom-btn-color small stretched-link">Read
+                    <a href="/blogs/blogs.html"
+                      class="btn btn-warning custom-btn-color btn-sm small stretched-link">Read
                       more!</a>
                   </div>
                 </div>
@@ -397,7 +404,8 @@
                     <p class="card-text text-muted small">In today's competitive job market, networking has become more
                       important than
                       ever. With so many qualified...</p>
-                    <a href="/blogs/blog2.html" class="btn btn-warning custom-btn-color small stretched-link">Read
+                    <a href="/blogs/blog2.html"
+                      class="btn btn-warning btn-sm custom-btn-color small stretched-link">Read
                       more!</a>
                   </div>
                 </div>
@@ -409,7 +417,8 @@
                       over
                       one month of
                       experience in the industry...</p>
-                    <a href="/blogs/myself.html" class="btn btn-warning custom-btn-color small stretched-link">Read
+                    <a href="/blogs/myself.html"
+                      class="btn btn-warning btn-sm custom-btn-color small stretched-link">Read
                       more!</a>
                   </div>
                 </div>
@@ -425,7 +434,8 @@
                     <p class="card-text text-muted small ">In today's competitive job market, networking has become more
                       important than
                       ever. With so many qualified...</p>
-                    <a href="/blogs/blog2.html" class="btn btn-warning custom-btn-color small stretched-link">Read
+                    <a href="/blogs/blog2.html"
+                      class="btn btn-warning btn-sm custom-btn-color small stretched-link">Read
                       more!</a>
                   </div>
                 </div>
@@ -437,7 +447,8 @@
                       exciting
                       and challenging
                       experience. As a frontend intern at Aspark System</p>
-                    <a href="/blogs/blogs.html" class="btn btn-warning custom-btn-color small stretched-link">Read
+                    <a href="/blogs/blogs.html"
+                      class="btn btn-warning btn-sm custom-btn-color small stretched-link">Read
                       more!</a>
                   </div>
                 </div>
@@ -449,7 +460,8 @@
                       over
                       one month of
                       experience in the industry...</p>
-                    <a href="/blogs/myself.html" class="btn btn-warning custom-btn-color small stretched-link">Read
+                    <a href="/blogs/myself.html"
+                      class="btn btn-warning btn-sm custom-btn-color small stretched-link">Read
                       more!</a>
                   </div>
                 </div>
@@ -465,7 +477,8 @@
                       over
                       one month of
                       experience in the industry...</p>
-                    <a href="/blogs/myself.html" class="btn btn-warning custom-btn-color small stretched-link">Read
+                    <a href="/blogs/myself.html"
+                      class="btn btn-warning btn-sm custom-btn-color small stretched-link">Read
                       more!</a>
                   </div>
                 </div>
@@ -476,7 +489,8 @@
                     <p class="card-text text-muted small">In today's competitive job market, networking has become more
                       important than
                       ever. With so many qualified...</p>
-                    <a href="/blogs/blog2.html" class="btn btn-warning custom-btn-color small stretched-link">Read
+                    <a href="/blogs/blog2.html"
+                      class="btn btn-warning btn-sm custom-btn-color small stretched-link">Read
                       more!</a>
                   </div>
                 </div>
@@ -489,7 +503,8 @@
                       exciting
                       and challenging
                       experience. As a frontend intern at Aspark System</p>
-                    <a href="/blogs/blogs.html" class="btn btn-warning custom-btn-color small stretched-link">Read
+                    <a href="/blogs/blogs.html"
+                      class="btn btn-warning btn-sm custom-btn-color small stretched-link">Read
                       more!</a>
                   </div>
                 </div>

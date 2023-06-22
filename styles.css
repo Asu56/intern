@@ -25,22 +25,130 @@ body {
   color: #040434;
 }
 
+:root {
+  --golden-ratio: 1.61803398875;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
 
 h1 {
-  font-size: calc(1em + 1.61803398875vw);
-  /* Set the font size using the golden ratio */
+  font-size: calc(var(--golden-ratio) * 2em);
+  font-weight: bold;
 }
 
 h2 {
-  font-size: calc(1em + 1.61803398875vw);
-  /* Set the font size using the golden ratio */
+  font-size: calc(var(--golden-ratio) * 1.5em);
+  font-weight: bold;
+}
+
+h3 {
+  font-size: calc(var(--golden-ratio) * 1.25em);
+  font-weight: bold;
+}
+
+h4 {
+  font-size: calc(var(--golden-ratio) * 1.125em);
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: calc(var(--golden-ratio) * 0.875em);
+  font-weight: bold;
 }
 
 p {
-  font-size: 1em;
-  /* Set a base font size */
-  line-height: 1.61803398875;
-  /* Set the line height using the golden ratio */
+  font-size: calc(1em / var(--golden-ratio));
+  margin-bottom: 1em;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: calc(var(--golden-ratio) * 2.5em);
+  }
+
+  h2 {
+    font-size: calc(var(--golden-ratio) * 1.75em);
+  }
+
+  h3 {
+    font-size: calc(var(--golden-ratio) * 1.375em);
+  }
+
+  h4 {
+    font-size: calc(var(--golden-ratio) * 1.25em);
+  }
+
+  h5 {
+    font-size: 1.125em;
+  }
+
+  h6 {
+    font-size: calc(var(--golden-ratio) * 0.9375em);
+  }
+
+  p {
+    font-size: calc((1em / var(--golden-ratio)) * 1.1);
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: calc(var(--golden-ratio) * 3em);
+  }
+
+  h2 {
+    font-size: calc(var(--golden-ratio) * 2em);
+  }
+
+  h3 {
+    font-size: calc(var(--golden-ratio) * 1.5em);
+  }
+
+  h4 {
+    font-size: calc(var(--golden-ratio) * 1.375em);
+  }
+
+  h5 {
+    font-size: 1.25em;
+  }
+
+  h6 {
+    font-size: calc(var(--golden-ratio) * 1.0625em);
+  }
+
+  p {
+    font-size: calc((1em / var(--golden-ratio)) * 1.2);
+  }
 }
 
 .custom-name {
@@ -48,21 +156,21 @@ p {
 }
 
 .custom-text-color {
-  color: #80aad6;
+  color: #7acbfe;
   font-weight: 600;
 }
 
 :root {
-  --btn-color: #040434;
-  --btn-bg: #76c9ff;
-  --btn-border-color: #6ab4e5;
+  --btn-color: #fff;
+  --btn-bg: #7acbfe;
+  --btn-border-color: #7acbfe;
   --btn-hover-color: #fff;
-  --btn-hover-bg: #528cb2;
-  --btn-hover-border-color: #528cb2;
+  --btn-hover-bg: #61bffd;
+  --btn-hover-border-color: #61bffd;
   --btn-focus-shadow-rgb: 49, 132, 253;
   --btn-active-color: #fff;
-  --btn-active-bg: #528cb2;
-  --btn-active-border-color: #528cb2;
+  --btn-active-bg: #76c9ff;
+  --btn-active-border-color: #76c9ff;
   --btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --btn-disabled-color: #fff;
   --btn-disabled-bg: #91d3ff;
@@ -72,6 +180,32 @@ p {
   --insta-bg: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   --lin-color: #0077b5;
   --git-color: #171515;
+
+}
+
+.btn-warning {
+  --bs-btn-color: #000;
+  --bs-btn-bg: #ffe038;
+  --bs-btn-border-color: #ffe038;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #ffca2c;
+  --bs-btn-hover-border-color: #ffc720;
+  --bs-btn-focus-shadow-rgb: 217, 164, 6;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #ffcd39;
+  --bs-btn-active-border-color: #ffc720;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: #ffc107;
+  --bs-btn-disabled-border-color: #ffc107;
+}
+
+.redmore {
+  color: dimgray;
+}
+
+.redmore:hover {
+  color: #7acbfe;
 }
 
 .btn-primary {
@@ -562,160 +696,5 @@ Extra extra large	xxl	≥1400px */
 
   .fnav li {
     font-size: medium;
-  }
-}
-
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
-  h1 {
-    font-size: calc(1.61803398875 * 1.05em);
-  }
-
-  h2 {
-    font-size: calc(1.61803398875 * 1em);
-  }
-
-  h3 {
-    font-size: calc(1.61803398875 * 0.95em);
-  }
-
-  h4 {
-    font-size: calc(1.61803398875 * 0.9em);
-  }
-
-  h5 {
-    font-size: calc(1.61803398875 * 0.85em);
-  }
-
-  h6 {
-    font-size: calc(1.61803398875 * 0.8em);
-  }
-
-  p {
-    font-size: calc(1em + 0.1vw);
-  }
-}
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {
-  h1 {
-    font-size: calc(1.61803398875 * 1.075em);
-  }
-
-  h2 {
-    font-size: calc(1.61803398875 * 1.025em);
-  }
-
-  h3 {
-    font-size: calc(1.61803398875 * 0.975em);
-  }
-
-  h4 {
-    font-size: calc(1.61803398875 * 0.925em);
-  }
-
-  h5 {
-    font-size: calc(1.61803398875 * 0.875em);
-  }
-
-  h6 {
-    font-size: calc(1.61803398875 * 0.825em);
-  }
-
-  p {
-    font-size: calc(1em + 0.075vw);
-  }
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-  h1 {
-    font-size: calc(1.61803398875 * 1.1em);
-  }
-
-  h2 {
-    font-size: calc(1.61803398875 * 1.05em);
-  }
-
-  h3 {
-    font-size: calc(1.61803398875 * 1em);
-  }
-
-  h4 {
-    font-size: calc(1.61803398875 * 0.95em);
-  }
-
-  h5 {
-    font-size: calc(1.61803398875 * 0.9em);
-  }
-
-  h6 {
-    font-size: calc(1.61803398875 * 0.85em);
-  }
-
-  p {
-    font-size: calc(1em + 0.05vw);
-  }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  h1 {
-    font-size: calc(1.61803398875 * 1.125em);
-  }
-
-  h2 {
-    font-size: calc(1.61803398875 * 1.075em);
-  }
-
-  h3 {
-    font-size: calc(1.61803398875 * 1.025em);
-  }
-
-  h4 {
-    font-size: calc(1.61803398875 * 0.975em);
-  }
-
-  h5 {
-    font-size: calc(1.61803398875 * 0.925em);
-  }
-
-  h6 {
-    font-size: calc(1.61803398875 * 0.875em);
-  }
-
-  p {
-    font-size: calc(1em + 0.03vw);
-  }
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  h1 {
-    font-size: calc(1.61803398875 * 1.15em);
-  }
-
-  h2 {
-    font-size: calc(1.61803398875 * 1.1em);
-  }
-
-  h3 {
-    font-size: calc(1.61803398875 * 1.05em);
-  }
-
-  h4 {
-    font-size: calc(1.61803398875 * 1em);
-  }
-
-  h5 {
-    font-size: calc(1.61803398875 * 0.95em);
-  }
-
-  h6 {
-    font-size: calc(1.61803398875 * 0.9em);
-  }
-
-  p {
-    font-size: calc(1em + 0.02vw);
   }
 }
